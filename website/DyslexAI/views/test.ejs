@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script src="assets/js/random.js"></script>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/index">DyslexAI</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/">Home</a></li>
+								<li><a href="/readtest">Reading Test</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h3>Take the test now</h3>
+								<p>Take a deep breadth and Read the below paragraph without breaks</p>
+                                <button onclick="parag()">Start</button>
+							</div>
+						</header>
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h4 >PARAGRAPH</h4>
+										<blockquote >
+                                            <p id="prandom"></p></blockquote>
+
+											<div class="container">
+												<div class="display">
+
+												</div>
+												<div class="controllers"></div>
+											  </div>
+											  <form action="/test" method="post">
+												<input id="audio-data" type="hidden" name="audio_data">
+												<input id="para" type="hidden" name="para">
+												<input id="dura" type="hidden" name="dura">
+												<button id="recordButton" type="submit" disabled>Submit</button>
+											  </form>
+
+											  <div id="scoredisp">
+												
+											  </div>
+
+										
+										
+									</section>
+
+									<section>
+										
+										<ul class="pagination">
+											<li><a href="/test" class="button small">Retake Test</a></li>
+										</ul>
+									</section>
+
+									
+
+									
+
+								</div>
+							</div>
+                        </div>
+					</section>
+          
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">TIPS TO IMPROVE</h2>
+							<p></p>
+							
+							
+						
+					</section>
+
+			</div>
+			
+			
+		<!-- Scripts -->
+		    <script src="assets/js/audio2.js"></script>
+		    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            
+	</body>
+</html>

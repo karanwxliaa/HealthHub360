@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <title>Readright/login</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="nav">
+                <button class="btn btn1" id="btns1" onclick="showLogin()">Login</button>
+                <button class="btn btn2" id="btns2" onclick="showSignup()">Sign Up</button>
+            </div>
+            <div class="main">
+                <div id="login" class="loginClass">
+                    <input type="text" id="username" placeholder="Username" required><br>
+                    <input type="password" id="password" placeholder="Password"><br>
+                    <div class="enquire">
+                        <a href="#"><input type="checkbox" id="remember">&nbspRemember me</a>
+                        <a href="#">Forgot password?</a>
+                    </div><br>
+                    <button class="subBtn" type="submit">LOGIN</button><br>
+                    <a href="#" onclick="showSignup()">No Account? Create one</a>
+                </div>
+                <div id="signUp" class="signupClass">
+                    <input type="email" id="email" placeholder="Email" required><br>
+                    <input type="text" id="username" placeholder="Username" required><br>
+                    <input type="password" id="password" placeholder="Password" required><br>
+                    <button type="submit" class="signBtn">CREATE ACCOUNT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
